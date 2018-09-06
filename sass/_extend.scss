@@ -1,0 +1,50 @@
+
+//extend 
+.h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+.span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: $primaryColor;
+    margin: 1rem auto;
+}
+.p {
+    margin: 1.5rem 0;
+    color: $secondaryColor;
+    letter-spacing: 2px;
+}
+.button-p {
+    background: $primaryColor;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    @include Trans;
+    &:hover {
+        background: #fff;
+        color: $secondaryColor
+    }
+}
+.button-s {
+    background: #fff;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 15px;
+    color: $secondaryColor;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    @include Trans;
+    &:hover {
+        background: $secondaryColor;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
+

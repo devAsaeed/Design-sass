@@ -1,0 +1,50 @@
+@include lg {
+    
+}
+
+@include md {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include sm {
+    header {
+        position: static;
+        text-align: center;
+        background: $secondaryColor;
+        .logo {
+            float: none;
+            width: 100%;
+        }
+        ul {
+            float: none;
+            width: 100%;
+            display: block
+        }
+    }
+    .h2 {
+        font-size: 1.5rem;
+    }
+    
+    .service {
+        .service-parent {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include xs {
+    .service {
+        .service-parent {
+            grid-template-columns: 1fr;
+        }
+    }
+    .images {
+        grid-template-columns: 1fr;
+    }
+}
+

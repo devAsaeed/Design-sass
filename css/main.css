@@ -1,0 +1,208 @@
+.h2, .home .home-content h2, .need h2, .service h2, .download h2, .get-touch h2 {
+  font-size: 3rem;
+  color: #fff; }
+
+.span, .home .home-content span, .need span, .service span, .get-touch > span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #f05f40;
+  margin: 1rem auto; }
+
+.p, .home .home-content p, .need p, .get-touch p {
+  margin: 1.5rem 0;
+  color: #444;
+  letter-spacing: 2px; }
+
+.button-p, .home .home-content button {
+  background: #f05f40;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .5s ease-in-out; }
+  .button-p:hover, .home .home-content button:hover {
+    background: #fff;
+    color: #444; }
+
+.button-s, .need button, .download button {
+  background: #fff;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  border-radius: 15px;
+  color: #444;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .5s ease-in-out; }
+  .button-s:hover, .need button:hover, .download button:hover {
+    background: #444;
+    color: #fff;
+    border: 1px solid #fff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; }
+
+.container {
+  width: 85%;
+  margin: auto; }
+
+header {
+  background: rgba(68, 68, 68, 0.5);
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999; }
+  header .logo {
+    width: 50%;
+    float: left; }
+    header .logo h2 {
+      color: #fff;
+      padding: 10px 0; }
+  header ul {
+    width: 50%;
+    float: left;
+    display: flex;
+    list-style: none;
+    padding: 10px 0; }
+    header ul li {
+      padding: 10px 15px; }
+      header ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all .5s ease-in-out; }
+        header ul li a:hover {
+          color: #f05f40; }
+
+.home {
+  background: url("../images/header.jpg");
+  background-size: cover;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+  position: relative; }
+  .home .home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.need {
+  background: #f05f40;
+  text-align: center;
+  padding: 3rem 0; }
+  .need span {
+    background: #fff; }
+  .need button {
+    transition: all .5s ease-in-out;
+    background: #fff;
+    color: #444; }
+    .need button:hover {
+      color: #fff;
+      background: #444; }
+
+.service {
+  padding: 5rem 0;
+  background: #fff;
+  text-align: center; }
+  .service h2 {
+    color: #444; }
+  .service .service-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin: 1.5rem 0; }
+    .service .service-parent i {
+      color: #f05f40; }
+    .service .service-parent h3 {
+      margin: 1rem;
+      color: #333; }
+    .service .service-parent p {
+      color: #9b9b9b; }
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0; }
+  .images .image {
+    position: relative; }
+    .images .image img {
+      width: 100%; }
+    .images .image:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(242, 115, 88, 0.5);
+      opacity: 0;
+      transition: all .5s ease-in-out; }
+    .images .image:hover:after {
+      opacity: 1; }
+
+.download {
+  background: #444;
+  text-align: center;
+  padding: 5rem 0; }
+  .download button {
+    margin: 1rem 0; }
+
+.get-touch {
+  text-align: center;
+  padding: 5rem 0; }
+  .get-touch h2 {
+    color: #333; }
+  .get-touch .touch {
+    display: flex;
+    justify-content: center; }
+    .get-touch .touch .item {
+      margin: 1rem 1.5rem; }
+      .get-touch .touch .item i {
+        display: block; }
+      .get-touch .touch .item:last-child span {
+        color: #f05f40; }
+
+@media (min-width: 769px) and (max-width: 1170px) {
+  .images {
+    grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) {
+  header {
+    position: static;
+    text-align: center;
+    background: #444; }
+    header .logo {
+      float: none;
+      width: 100%; }
+    header ul {
+      float: none;
+      width: 100%;
+      display: block; }
+
+  .h2, .home .home-content h2, .need h2, .service h2, .download h2, .get-touch h2 {
+    font-size: 1.5rem; }
+
+  .service .service-parent {
+    grid-template-columns: repeat(2, 1fr); }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 575px) {
+  .service .service-parent {
+    grid-template-columns: 1fr; }
+
+  .images {
+    grid-template-columns: 1fr; } }
+
+/*# sourceMappingURL=main.css.map */
